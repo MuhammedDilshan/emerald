@@ -1042,11 +1042,32 @@ footer .reservation p span a {
     #reach ul li {
         width: 30%;
     }
+    #about {
+        padding: 15% 4%;
+    }
     #about .left {
         width: 70%;
     }
+    #about .right h1 {
+        font-size: 28px;
+    }
+    #about .right p {
+        font-size: 15px;
+    }
+    #mission {
+        padding: 15% 4%;
+    }
+    #mission .left h1 {
+        font-size: 28px;
+    }
+    #mission .left p {
+        font-size: 15px;
+    }
     #mission .right {
-        width: 90%;
+        width: 75%;
+    }
+    #vision {
+        padding: 15% 4%;
     }
     #vision .left {
         width: 73%;
@@ -1057,8 +1078,12 @@ footer .reservation p span a {
     #vision .left img.vision {
         width: 100%;
     }
+    #services {
+        padding: 15% 4%;
+    }
     #services h1 {
         font-size: 30px;
+        margin-bottom: 35px;
     }
     #services ul li:nth-child(3n) {
         margin-right: 0;
@@ -1066,13 +1091,44 @@ footer .reservation p span a {
     #services ul li:nth-child(n+2) {
         margin-top: 24px;
     }
-    #services h1 {
-        margin-bottom: 35px;
-    }
     #services ul li {
         width: 100%;
-        padding: 30px 50px;
+        padding: 30px 30px;
         margin-right: 0;
+    }
+    #services ul li a h2 {
+        font-size: 18px;
+    }
+    #services ul li a p {
+        font-size: 14px;
+    }
+    #services ul li a img {
+        width: 15%;
+    }
+    #contact {
+        padding: 36% 4%;
+    }
+    #contact .content h1 {
+        font-size: 34px;
+    }
+    #contact .content {
+        margin-bottom: 0;
+    }
+    #contact .details {
+        justify-content: center;
+        text-align: center;
+        margin-top: 26px;
+    }
+    #contact .details li {
+        flex-direction: column;
+        padding: 0%;
+        margin-bottom: 18px;
+    }
+    #contact .details li span {
+        margin: 0;
+    }
+    #contact .details li .logo img {
+        margin-bottom: 10px;
     }
     #testimonial .top h1 {
         font-size: 30px;
@@ -1095,6 +1151,12 @@ footer .reservation p span a {
         margin-right: 0;
         width: 60%;
     }
+    footer .logo img {
+        width: 52%;
+    }
+    footer .social-links ul li a img {
+        width: 85%;
+    }
 }
 
 @media all and (max-width: 360px) {
@@ -1102,8 +1164,20 @@ footer .reservation p span a {
         width: 50%;
         margin: 20px;
     }
+    #mission .right {
+        width: 90%;
+    }
+    #about .left {
+        width: 85%;
+    }
+    #about .right h1 {
+        font-size: 26px;
+    }
     #about .right p {
         font-size: 14px;
+    }
+    #mission .left h1 {
+        font-size: 26px;
     }
     #mission .left p {
         font-size: 14px;
@@ -1111,8 +1185,14 @@ footer .reservation p span a {
     #vision .left {
         width: 90%;
     }
+    #vision .right h1 {
+        font-size: 26px;
+    }
     #vision .right p {
         font-size: 14px;
+    }
+    #services h1 {
+        font-size: 28px;
     }
     #services ul li {
         padding: 30px;
@@ -1121,7 +1201,7 @@ footer .reservation p span a {
         right: -25px;
     }
     #contact {
-        padding: 35% 0 30% 0;
+        padding: 36% 0 34% 0;
     }
     #contact .content h1 {
         font-size: 36px;
@@ -1133,8 +1213,26 @@ footer .reservation p span a {
     #contact .details {
         margin-top: 30px;
     }
+    footer {
+        padding-top: 12%;
+    }
     footer .logo {
-        margin-bottom: 40px;
+        margin-bottom: 28px;
+    }
+    footer .social-links ul {
+        margin-bottom: 50px;
+    }
+    footer .menu ul {
+        margin-bottom: 14px;
+    }
+    #contact .details li {
+        margin-bottom: 14px;
+    }
+    footer .logo img {
+        width: 52%;
+    }
+    footer .social-links ul li a img {
+        width: 85%;
     }
 }
 
@@ -1151,6 +1249,9 @@ footer .reservation p span a {
     #about .left {
         width: 100%;
     }
+    #mission .right {
+        width: 95%;
+    }
     #mission .right img.mission {
         width: 100%;
     }
@@ -1162,6 +1263,9 @@ footer .reservation p span a {
     }
     #testimonial .bottom ul li .user {
         right: -9px;
+    }
+    #contact {
+        padding: 48% 0 46% 0;
     }
     #contact .details {
         padding-left: 30px;
