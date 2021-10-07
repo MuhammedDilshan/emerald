@@ -132,6 +132,24 @@ header .right ul li a {
     font-size: 20px;
 }
 
+.sticky header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 55;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    animation: head .6s forwards;
+}
+
+@keyframes head {
+    0% {
+        transform: translateY(-80px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
 /* section header end */
 
@@ -184,7 +202,8 @@ header .right ul li a {
     color: #c5c5c5;
     width: 35%;
     margin: 0 auto;
-    line-height: 1.3em;
+    line-height: 23px;
+    letter-spacing: 1px;
 }
 
 
@@ -281,7 +300,8 @@ header .right ul li a {
     color: #989898;
     margin-top: 16px;
     width: 70%;
-    line-height: 1.3em;
+    line-height: 23px;
+    letter-spacing: 1px;
 }
 
 
@@ -322,7 +342,8 @@ header .right ul li a {
     color: #989898;
     margin-top: 16px;
     width: 70%;
-    line-height: 1.3em;
+    line-height: 23px;
+    letter-spacing: 1px;
 }
 
 #mission .right {
@@ -396,7 +417,8 @@ header .right ul li a {
     color: #989898;
     margin-top: 16px;
     width: 70%;
-    line-height: 1.3em;
+    line-height: 23px;
+    letter-spacing: 1px;
 }
 
 
@@ -430,6 +452,7 @@ header .right ul li a {
     margin-right: 24px;
     padding: 6% 2% 6% 2%;
     border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 #services ul li:nth-child(3n) {
@@ -442,6 +465,7 @@ header .right ul li a {
 
 #services ul li:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: scale(1.01);
 }
 
 #services ul li a img {
@@ -460,7 +484,8 @@ header .right ul li a {
     font-size: 16px;
     color: #989898;
     width: 90%;
-    line-height: 1.3em;
+    line-height: 23px;
+    letter-spacing: 1px;
 }
 
 
@@ -728,11 +753,23 @@ footer .reservation p span a {
 /* section footer end */
 
 @media all and (max-width: 1280px) {
+    #spotlight p {
+        width: 60%;
+    }
+    #about .right p {
+        width: 90%;
+    }
     #about .left img.mesh {
         top: 45%;
     }
     #mission .right img.mesh {
         top: 42%;
+    }
+    #mission .left p {
+        width: 90%;
+    }
+    #vision .right p {
+        width: 90%;
     }
     #vision .left img.mesh {
         top: 42%;
@@ -746,6 +783,9 @@ footer .reservation p span a {
 }
 
 @media all and (max-width: 1090px) {
+    #spotlight p {
+        font-size: 20px;
+    }
     #contact .wrapper {
         flex-direction: column;
         justify-content: space-evenly;
@@ -760,7 +800,30 @@ footer .reservation p span a {
     }
 }
 
+@media all and (max-width: 1024px) {
+    #spotlight h1 {
+        font-size: 55px;
+        width: 80%;
+        margin: 0 auto 25px;
+        line-height: 1.5em;
+    }
+    #spotlight p {
+        font-size: 20px;
+        line-height: 1.7em;
+    }
+}
+
 @media all and (max-width: 980px) {
+    #spotlight h1 {
+        font-size: 30px;
+        width: 100%;
+        margin: 0 auto 25px;
+        line-height: 1.5em;
+    }
+    #spotlight p {
+        font-size: 16px;
+        line-height: 1.7em;
+    }
     header .icon {
         display: block;
     }
@@ -871,6 +934,12 @@ footer .reservation p span a {
     .next-arrow {
         right: -20px;
     }
+    #contact {
+        padding: 12% 0;
+    }
+    #contact .details li .address {
+        width: 60%;
+    }
     #contact .content {
         width: 100%;
         margin-bottom: 30px;
@@ -878,10 +947,6 @@ footer .reservation p span a {
     #contact .details {
         flex-direction: column;
         justify-content: space-evenly;
-    }
-    #contact .details li {
-        width: 100%;
-        border: none;
     }
     #contact .details li:nth-child(2) {
         border: none;
@@ -891,7 +956,18 @@ footer .reservation p span a {
         padding: 0;
     }
     #contact .details li {
+        width: 100%;
+        border: none;
+        flex-direction: column;
+        padding-right: 0;
+        text-align: center;
         margin-bottom: 15px;
+    }
+    #contact .details li span {
+        margin-left: 0;
+    }
+    #contact .details li .logo {
+        margin-bottom: 16px;
     }
     footer .logo {
         margin-bottom: 50px;
@@ -899,6 +975,16 @@ footer .reservation p span a {
 }
 
 @media all and (max-width: 768px) {
+    #spotlight h1 {
+        font-size: 38px;
+        width: 80%;
+        margin: 0 auto 25px;
+        line-height: 1.5em;
+    }
+    #spotlight p {
+        font-size: 16px;
+        line-height: 1.3em;
+    }
     #about .wrapper {
         flex-direction: column;
         text-align: center;
@@ -941,9 +1027,6 @@ footer .reservation p span a {
         margin: 16px auto;
         width: 100%;
     }
-    #spotlight h1 {
-        font-size: 32px;
-    }
     #spotlight p {
         width: 70%;
     }
@@ -984,14 +1067,16 @@ footer .reservation p span a {
         right: -55px;
     }
     #contact {
-        padding: 100px 0;
+        padding: 24% 0;
     }
     #contact .wrapper {
         flex-direction: column;
+        justify-content: center;
     }
     #contact .content {
         width: 100%;
         text-align: center;
+        margin-bottom: 0;
     }
     #contact .content p {
         margin: 0 auto;
@@ -1005,6 +1090,16 @@ footer .reservation p span a {
 }
 
 @media all and (max-width: 640px) {
+    #spotlight h1 {
+        font-size: 26px;
+        width: 100%;
+        margin: 0 auto 25px;
+        line-height: 1.5em;
+    }
+    #spotlight p {
+        font-size: 16px;
+        line-height: 1.2em;
+    }
     #reach ul {
         flex-wrap: wrap;
     }
@@ -1025,9 +1120,20 @@ footer .reservation p span a {
     #contact .details {
         margin-top: 24px;
     }
+    #contact .details li .address {
+        width: 100%;
+    }
 }
 
 @media all and (max-width: 480px) {
+    header .left h1 a img {
+        width: 70%;
+    }
+    #spotlight p {
+        font-size: 14px;
+        width: 90%;
+        line-height: 1.5em;
+    }
     .mobile-menu {
         width: 100%;
         text-align: center;
@@ -1160,6 +1266,9 @@ footer .reservation p span a {
 }
 
 @media all and (max-width: 360px) {
+    #spotlight p {
+        font-size: 13px;
+    }
     #reach ul li {
         width: 50%;
         margin: 20px;
