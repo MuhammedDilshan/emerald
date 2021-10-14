@@ -109,7 +109,7 @@ header .right ul {
 }
 
 header .right ul li {
-    margin-right: 36px;
+    margin-right: 40px;
     opacity: 0.5;
 }
 
@@ -129,7 +129,7 @@ header .right ul li:last-child {
 header .right ul li a {
     font-weight: 600;
     color: #1f1865;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .sticky header {
@@ -192,15 +192,15 @@ header .right ul li a {
 }
 
 #spotlight h1 {
-    font-size: 40px;
+    font-size: 50px;
     color: #fff;
     margin-bottom: 28px;
 }
 
 #spotlight p {
-    font-size: 16px;
+    font-size: 18px;
     color: #c5c5c5;
-    width: 35%;
+    width: 58%;
     margin: 0 auto;
     line-height: 23px;
     letter-spacing: 1px;
@@ -452,7 +452,7 @@ header .right ul li a {
     margin-right: 24px;
     padding: 6% 2% 6% 2%;
     border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: 1px solid #3f3f3f29;
 }
 
 #services ul li:nth-child(3n) {
@@ -659,6 +659,10 @@ header .right ul li a {
 
 #contact .details li a {
     display: flex;
+}
+
+#contact .details li a:hover {
+    transform: scale(1.1);
 }
 
 #contact .details li span {
