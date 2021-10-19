@@ -452,7 +452,7 @@ header .right ul li a {
     margin-right: 24px;
     padding: 6% 2% 6% 2%;
     border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: 1px solid #cfcfcf;
 }
 
 #services ul li:nth-child(3n) {
@@ -644,6 +644,11 @@ header .right ul li a {
     padding-right: 24px;
 }
 
+#contact .details li:hover img {
+    transition: 0.2s all ease-in;
+    transform: scale(1.3);
+}
+
 #contact .details li:last-child {
     border-right: none;
 }
@@ -724,7 +729,7 @@ footer .social-links ul li {
 }
 
 footer .social-links ul li:hover {
-    opacity: 0.6;
+    opacity: 0.8;
     transition: 0.2s all ease-in;
     transform: scale(1.1);
 }
@@ -766,7 +771,7 @@ footer .reservation p span a {
         top: 42%;
     }
     #mission .left p {
-        width: 90%;
+        width: 83%;
     }
     #vision .right p {
         width: 90%;
@@ -938,7 +943,8 @@ footer .reservation p span a {
         padding: 12% 0;
     }
     #contact .details li .address {
-        width: 60%;
+        width: 80%;
+        margin: 0 auto;
     }
     #contact .content {
         width: 100%;
