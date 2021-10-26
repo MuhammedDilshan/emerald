@@ -55,6 +55,10 @@ ul {
     list-style: none;
 }
 
+h1 {
+    line-height: 1.3em;
+}
+
 del {
     text-decoration: line-through;
 }
@@ -228,6 +232,7 @@ header .right ul li a {
     backdrop-filter: blur(5px);
     text-align: center;
     box-shadow: 0px 4px 38px rgba(0, 0, 0, 0.06);
+    transition: 0.3s all ease-in;
 }
 
 #reach ul li:hover {
@@ -257,7 +262,7 @@ header .right ul li a {
 
 #about .wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -279,7 +284,7 @@ header .right ul li a {
 }
 
 #about .right {
-    width: 50%;
+    width: 41%;
 }
 
 #about .right span {
@@ -299,7 +304,7 @@ header .right ul li a {
 #about .right p {
     color: #989898;
     margin-top: 16px;
-    width: 70%;
+    width: 100%;
     line-height: 23px;
     letter-spacing: 1px;
 }
@@ -318,6 +323,7 @@ header .right ul li a {
 #mission .wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #mission .left {
@@ -341,18 +347,18 @@ header .right ul li a {
 #mission .left p {
     color: #989898;
     margin-top: 16px;
-    width: 70%;
+    width: 80%;
     line-height: 23px;
     letter-spacing: 1px;
 }
 
 #mission .right {
-    width: 50%;
+    width: 40%;
     position: relative;
 }
 
 #mission .right img.mission {
-    max-width: 80%;
+    max-width: 100%;
 }
 
 #mission .right img.mesh {
@@ -376,6 +382,7 @@ header .right ul li a {
 #vision .wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #vision .left {
@@ -396,7 +403,7 @@ header .right ul li a {
 }
 
 #vision .right {
-    width: 50%;
+    width: 40%;
 }
 
 #vision .right span {
@@ -416,7 +423,7 @@ header .right ul li a {
 #vision .right p {
     color: #989898;
     margin-top: 16px;
-    width: 70%;
+    width: 100%;
     line-height: 23px;
     letter-spacing: 1px;
 }
@@ -453,7 +460,7 @@ header .right ul li a {
     padding: 6% 2% 6% 2%;
     border-radius: 12px;
     border: 1px solid #cfcfcf;
-    transition: .4s ease-in;
+    transition: .3s ease-in;
 }
 
 #services ul li:nth-child(3n) {
@@ -479,6 +486,7 @@ header .right ul li a {
     color: #1b3568;
     margin-bottom: 16px;
     font-weight: 600;
+    line-height: 1.2em;
 }
 
 #services ul li a p {
@@ -647,6 +655,17 @@ header .right ul li a {
 
 #contact .details li img {
     transition: .5s ease-in;
+    background-color: #8e8d92;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+#contact .details li img.location {
+    width: 26px;
+}
+
+#contact .details li img.contact {
+    width: 28px;
 }
 
 #contact .details li:hover img {
@@ -885,6 +904,12 @@ footer .reservation p span a {
     header .right {
         display: none;
     }
+    #reach ul li {
+        width: 20%;
+    }
+    #reach ul li:last-child {
+        margin-right: 0;
+    }
     #about .left img.mesh {
         top: 48%;
     }
@@ -898,7 +923,7 @@ footer .reservation p span a {
         width: 100%;
     }
     #about .right p {
-        width: 90%;
+        width: 100%;
     }
     #mission .right img.mesh {
         width: 30%;
@@ -912,7 +937,7 @@ footer .reservation p span a {
         top: 38%;
     }
     #vision .right p {
-        width: 72%;
+        width: 90%;
     }
     #services ul li:nth-child(3n) {
         margin-right: 24px;
@@ -1041,6 +1066,9 @@ footer .reservation p span a {
     #vision .left img.mesh {
         display: none;
     }
+    #vision .right {
+        width: 100%;
+    }
     #vision .right p {
         margin: 16px auto;
         width: 100%;
@@ -1122,9 +1150,12 @@ footer .reservation p span a {
         flex-wrap: wrap;
     }
     #reach ul li {
-        width: 25%;
+        width: 27%;
         flex-wrap: wrap;
         margin-bottom: 20px;
+    }
+    #reach ul li:nth-child(3) {
+        margin-right: 0;
     }
     #testimonial .bottom ul li .user {
         right: -33px;
@@ -1164,13 +1195,19 @@ footer .reservation p span a {
         width: 100%;
     }
     #reach ul li {
-        width: 30%;
+        width: 38%;
+    }
+    #reach ul li:nth-child(3) {
+        margin-right: 24px;
+    }
+    #reach ul li:nth-child(2n) {
+        margin-right: 0;
     }
     #about {
         padding: 15% 4%;
     }
     #about .left {
-        width: 70%;
+        width: 86%;
     }
     #about .right h1 {
         font-size: 28px;
@@ -1194,7 +1231,7 @@ footer .reservation p span a {
         padding: 15% 4%;
     }
     #vision .left {
-        width: 73%;
+        width: 94%;
     }
     #vision .right {
         width: 100%;
@@ -1219,6 +1256,7 @@ footer .reservation p span a {
         width: 100%;
         padding: 30px 30px;
         margin-right: 0;
+        text-align: center;
     }
     #services ul li a h2 {
         font-size: 18px;
@@ -1290,12 +1328,18 @@ footer .reservation p span a {
 }
 
 @media all and (max-width: 360px) {
+    #spotlight {
+        padding: 0 4%;
+    }
     #spotlight p {
         font-size: 13px;
     }
     #reach ul li {
         width: 50%;
         margin: 20px;
+    }
+    #reach ul li:nth-child(2n) {
+        margin-right: 24px;
     }
     #mission .right {
         width: 90%;
@@ -1367,6 +1411,12 @@ footer .reservation p span a {
     footer .social-links ul li a img {
         width: 85%;
     }
+    footer .reservation p {
+        font-size: 16px;
+    }
+    footer .reservation p span a {
+        font-size: 16px;
+    }
 }
 
 @media all and (max-width: 320px) {
@@ -1411,5 +1461,8 @@ footer .reservation p span a {
     }
     footer .social-links ul li img {
         width: 30px;
+    }
+    footer .reservation p {
+        font-size: 14px;
     }
 }
