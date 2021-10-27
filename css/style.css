@@ -481,6 +481,10 @@ header .right ul li a {
     margin-bottom: 24px;
 }
 
+#services ul li a {
+    display: block;
+}
+
 #services ul li a h2 {
     font-size: 20px;
     color: #1b3568;
@@ -655,17 +659,20 @@ header .right ul li a {
 
 #contact .details li img {
     transition: .5s ease-in;
-    background-color: #8e8d92;
-    padding: 6px;
+    background-color: #dfdfdf;
     border-radius: 8px;
+    width: 35px;
+    padding: 10px;
 }
 
 #contact .details li img.location {
-    width: 26px;
+    width: 35px;
+    height: 35px;
 }
 
 #contact .details li img.contact {
-    width: 28px;
+    width: 35px;
+    height: 35px;
 }
 
 #contact .details li:hover img {
@@ -785,6 +792,9 @@ footer .reservation p span a {
 @media all and (max-width: 1280px) {
     #spotlight p {
         width: 60%;
+    }
+    #reach ul li {
+        width: 18%;
     }
     #about .right p {
         width: 90%;
@@ -1133,6 +1143,9 @@ footer .reservation p span a {
     #contact .details li {
         margin-bottom: 26px;
     }
+    footer .social-links ul {
+        margin-bottom: 65px;
+    }
 }
 
 @media all and (max-width: 640px) {
@@ -1145,6 +1158,9 @@ footer .reservation p span a {
     #spotlight p {
         font-size: 16px;
         line-height: 1.2em;
+    }
+    #services ul li {
+        width: 45%;
     }
     #reach ul {
         flex-wrap: wrap;
@@ -1319,6 +1335,9 @@ footer .reservation p span a {
     footer .social-links ul li a img {
         width: 85%;
     }
+    footer .social-links ul {
+        margin-bottom: 60px;
+    }
 }
 
 @media all and (max-width: 375px) {
@@ -1417,6 +1436,9 @@ footer .reservation p span a {
     footer .reservation p span a {
         font-size: 16px;
     }
+    footer .social-links ul {
+        margin-bottom: 45px;
+    }
 }
 
 @media all and (max-width: 320px) {
@@ -1464,5 +1486,8 @@ footer .reservation p span a {
     }
     footer .reservation p {
         font-size: 14px;
+    }
+    footer .social-links ul {
+        margin-bottom: 40px;
     }
 }
